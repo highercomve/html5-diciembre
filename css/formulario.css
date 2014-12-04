@@ -1,0 +1,15 @@
+input[type=range]:before {
+  display: block;
+  content: "";
+  background-color: red;
+  width: 10px;
+}
+
+input[type=range]:after {
+  display: block;
+  content: attr(value);
+  width: 20px;
+  position: relative;
+  right: -26px;
+  color: black;
+}

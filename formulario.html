@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="css/formulario.css">
+  <title>Formularios</title>
+</head>
+<body>
+ 
+  <header>
+   <h1>Super Formularios HTML5</h1>
+  </header>
+<!--  section[role=main]-->
+  <section role="main">
+    <form action="#" >
+      <fieldset>
+        <legend>
+          Información del Usuario
+        </legend>
+        <div class="campo">
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" id="nombre" required placeholder="Escriba su nombre completo">
+        </div>
+        
+        <div class="campo">
+          <label for="email">Correo electronico</label>
+          <input type="email" name="email" id="email">
+        </div>
+        
+        <div class="campo">
+          <label for="password">Clave</label>
+          <input type="password" name="password" id="password" placeholder="Clave" required>
+        </div>
+        
+        <div class="campo">
+          <label for="telefono">Telefono</label>
+          <input type="tel" name="telefono" id="telefono" placeholder="Escriba su numero de telefono" required>
+        </div>
+        
+        <div class="campo">
+          <label for="edad">Edad</label>
+          <input type="number" name="edad" id="edad" placeholder="18-50" min="18" max="50" step="0.5" required>
+        </div>
+        
+        <div class="campo">
+          <label for="volumen">Volumen</label>
+          <input type="range"  name="volumen" id="volumen"  min="18" max="50" step="0.5" required>
+        </div> 
+<!--        fin range-->
+        
+        <div class="campo">
+          <label for="fecha">Fecha</label>
+          <input type="date" name="fecha" id="fecha">
+        </div>
+        
+        <div class="campo">
+          <label for="fechayhora">Fecha y Hora</label>
+          <input type="datetime"  name="fechayhora" id="fechayhora" >
+        </div>
+        
+        <div class="campo">
+          <label for="hora">Hora</label>
+          <input type="time" step="1300"  name="hora" id="hora" >
+        </div>
+        
+        <div class="campo">
+          <label for="direccion">Direccion Web</label>
+          <input type="url" name="direccion" id="direccion" required>
+        </div>
+        
+        <div class="campo">
+          <label for="busqueda">Buscar</label>
+          <input type="search" name="busqueda" id="busqueda">
+        </div>
+        
+        <div class="campo">
+          <label for="horario">Horario</label>
+          <input type="text" list="horarios" name="horario" id="horario">
+          <datalist id="horarios">
+            <option value="Mañana">
+            <option value="Tarde">
+            <option value="Noche">
+          </datalist>
+        </div>
+        <div class="campo">
+          <label for="pais">Horario</label>
+          <select name="pais" id="pais">
+            <option value="VE">Venezuela</option>
+            <option value="NS">Nose</option>
+            <option value="USA">Blah</option>
+          </select>
+        </div>
+        
+        <div class="campo">
+          <label for="">Intereses</label>
+          <input type="checkbox" name="interes" value="computacion" id="computacion">
+          <label for="computacion">Computación</label>
+          <input type="checkbox" name="interes" value="carros" id="carros">
+          <label for="carros">Carros</label>
+          <input type="checkbox" name="interes" value="gaticos" id="gaticos">
+          <label for="gaticos">Gaticos</label>
+          <input type="checkbox" name="interes" value="perros" id="perros">
+          <label for="perros">Perros</label>
+        </div>
+        
+        <div class="campo">
+          <label for="">Selecciona un unico interes</label>
+          <input type="radio" name="unico_interes" id="computacion_u">
+          <label for="computacion_u">Computación</label>
+          <input type="radio" name="unico_interes" id="carros_u">
+          <label for="carros_u">Carros</label>
+          <input type="radio" name="unico_interes" id="gaticos_u">
+          <label for="gaticos_u">Gaticos</label>
+          <input type="radio" name="unico_interes" id="perros_u">
+          <label for="perros_u">Perros</label>
+        </div>
+        
+        <div class="campo">
+          <label for="comentario">comentario</label>
+          <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+        </div>
+        
+        <input type="submit" value="Enviar">
+      </fieldset>
+    </form>
+  </section>
+
+  <footer>
+   <h6>Ejemplo de formularios</h6>
+  </footer>
+  <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("input[type=range]").on('change', function() {
+        $(this).attr('value',$(this).val());
+      });
+    });
+  </script>
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
