@@ -28,7 +28,7 @@ label + input + aside {
   border: red 10px solid;
 }
 
-label + input:checked + aside {
+label + input:checked + aside.modal {
   display: block;
 }
 

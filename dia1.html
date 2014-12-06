@@ -3,102 +3,126 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
-  <link rel="stylesheet" href="css/dia1.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href='http://fonts.googleapis.com/css?family=Dosis:200,400,600|Ubuntu:300,400|Open+Sans:400,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <h1>Mi sitio web HTML5</h1>
-    <img src="http://placehold.it/400x400" alt="">
+  <header class="main-header">
+    <a class="brand" href="/">Mi Marca</a>
+    <label class="toggle-next-element" for="menu-header-toggle">
+      <i class="icon-three-bars"></i>
+    </label>
+    <input type="checkbox" id="menu-header-toggle">
+    <ul class="menu menu-header">
+      <li>
+        <a href="dia1.html">Home</a>
+      </li>
+      <li>
+        <a href="formulario.html">Registro</a>
+      </li>
+    </ul>
   </header>
   
   <section role="main">
     <header>
       <h1>Nombre seccion</h1>
     </header>
-    
-    <article class="clase1 clase2" id="identificador">
-      <header><a href="#">Mi Titulo</a></header>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, nisi!</p>
-      <p>Magni error nemo obcaecati vitae nostrum cum impedit sequi voluptatibus!</p>
-      <p>Eos magnam ab nihil eligendi, harum eveniet dicta error enim!</p>
-      <footer>Footer</footer>
-    </article>
-    <article class="clase1 clase2" id="identificador">
-      <header><a href="#">Mi Titulo</a></header>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, consequuntur.</p>
-      <p>Placeat illum expedita vel praesentium, quaerat voluptas consectetur pariatur in.</p>
-      <p>Laboriosam veritatis architecto unde libero, dolorum ipsam officiis voluptatum mollitia.</p>
-      <footer>Footer</footer>
-    </article>
-    <article class="clase1 clase2" id="identificador">
-      <header><a href="#">Mi Titulo</a></header>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, ad!</p>
-      <p>Neque earum harum, quis accusamus placeat obcaecati quasi, quaerat quisquam.</p>
-      <p>Dicta totam commodi cumque voluptate aspernatur aperiam ipsam, quisquam alias.</p>
-      <footer>Footer</footer>
-    </article>
-    <article class="clase1 clase2" id="identificador">
-      <header><a href="#">Mi Titulo</a></header>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, corrupti.</p>
-      <p>Labore tempora aperiam ea neque qui rem molestiae, eveniet numquam!</p>
-      <p>Fuga, sed quaerat velit, quibusdam cumque voluptatem nisi distinctio provident.</p>
-      <footer>Footer</footer>
-    </article>
-    <article class="clase1 clase2" id="identificador">
-      <header><a href="#">Mi Titulo</a></header>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, ex.</p>
-      <p>Laboriosam deserunt explicabo fuga temporibus maxime fugiat omnis a quam.</p>
-      <p>Deserunt cum commodi pariatur nihil! Repellendus, possimus perferendis perspiciatis. Voluptatum.</p>
-      <footer>Footer</footer>
-    </article>
-    <article class="clase1 clase2" id="identificador">
-      <header><a href="#">Mi Titulo</a></header>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, accusantium.</p>
-      <p>Consectetur impedit aperiam dignissimos voluptates. Alias fugiat, eaque facere. Vel!</p>
-      <p>Inventore sapiente, animi, ipsam adipisci ducimus laboriosam laborum dolorem ab.</p>
-      <footer>Footer</footer>
-    </article>
-    <article class="clase1 clase2" id="identificador">
-      <header><a href="#">Mi Titulo</a></header>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, et!</p>
-      <p>A laboriosam odit repudiandae, perferendis earum quis accusamus repellendus tempore!</p>
-      <p>Rem, similique excepturi non eos? Dolor nisi doloremque, ad nostrum.</p>
-      <footer>Footer</footer>
-    </article>
-    <article class="clase1 clase2" id="identificador">
-      <header><a href="#">Mi Titulo</a></header>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laborum!</p>
-      <p>Possimus sit rem, eaque qui numquam cupiditate dolores beatae ratione.</p>
-      <p>Sequi distinctio quaerat quae ad perferendis soluta reprehenderit provident veniam.</p>
-      <footer>Footer</footer>
-    </article>
-    
-    <footer>1011
+<!-- article.modulo*6>((header>h2>a{Titulo articulo $})+(p*3>lorem)+(footer>p>a{enlaces}*3))-->
+     <article class="modulo">
+       <header>
+         <h2><a href="">Titulo articulo 1</a></h2>
+       </header>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem minima similique ex! Debitis libero, ut cum ex, repellat ad reiciendis amet sed, unde reprehenderit non doloribus impedit, illum quae? Repudiandae.</p>
+       <p>Sint explicabo, perspiciatis, deleniti similique quod ad laudantium iure laborum architecto porro voluptas cum ipsa consequatur et hic temporibus repellat reiciendis modi odio facilis tenetur. Sunt voluptatibus temporibus iste cumque?</p>
+       <p>Ea rerum minima neque, vero recusandae eius fuga maxime consectetur praesentium, incidunt adipisci quia qui quis commodi ab cumque provident, similique architecto delectus, porro hic. Deserunt, eum repellat est temporibus.</p>
+       <footer>
+         <p>
+           <a href="">enlaces</a>
+           <a href="">enlaces</a>
+           <a href="">enlaces</a>
+         </p>
+       </footer>
+     </article>
+     <article class="modulo">
+       <header>
+         <h2><a href="">Titulo articulo 2</a></h2>
+       </header>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, ratione eaque. Alias, sed distinctio a! Aspernatur, quia! Molestiae rem illum odit, doloribus, laboriosam, fugit asperiores temporibus quibusdam assumenda harum tempore.</p>
+       <p>Quia officiis sapiente doloribus deleniti at, dolores unde non, sit ex aliquid laboriosam iure eaque, necessitatibus magnam quae libero earum quibusdam et dolor voluptatum. Voluptatem quidem in provident totam magni?</p>
+       <p>Consequatur eaque, expedita accusamus iste placeat enim debitis tempora voluptatem temporibus ipsa laborum, vitae repudiandae quasi doloremque nesciunt sapiente alias sunt optio hic quas nostrum maiores natus? Explicabo, quasi, molestias!</p>
+       <footer>
+         <p>
+           <a href="">enlaces</a>
+           <a href="">enlaces</a>
+           <a href="">enlaces</a>
+         </p>
+       </footer>
+     </article>
+     <article class="modulo">
+       <header>
+         <h2><a href="">Titulo articulo 3</a></h2>
+       </header>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, nobis ut voluptate dignissimos blanditiis dicta distinctio necessitatibus fuga atque cum adipisci vero hic quasi veritatis fugiat, soluta perferendis corporis voluptatem.</p>
+       <p>Vitae itaque quasi commodi ab blanditiis delectus distinctio incidunt, at laborum suscipit officiis saepe sapiente, animi tenetur aperiam nostrum necessitatibus facere mollitia quisquam quam nihil soluta, reprehenderit nam repudiandae. Quia.</p>
+       <p>Sit itaque commodi nobis quibusdam repellendus iusto adipisci explicabo est earum, iure! Repellat laudantium ut, cumque incidunt eos dolorum suscipit odit, omnis tempore officia ullam rerum rem molestiae, libero nisi!</p>
+       <footer>
+         <p>
+           <a href="">enlaces</a>
+           <a href="">enlaces</a>
+           <a href="">enlaces</a>
+         </p>
+       </footer>
+     </article>
+     <article class="modulo">
+       <header>
+         <h2><a href="">Titulo articulo 4</a></h2>
+       </header>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, animi deleniti voluptatibus atque enim illum laborum culpa repellendus velit odio ipsum, omnis nemo? Optio possimus, praesentium, ut dolore aperiam libero?</p>
+       <p>Harum iusto aspernatur molestias voluptas aliquam maiores laborum labore blanditiis numquam. Voluptates ex illo dolorum quas fugit ullam magni quo voluptate nisi ad inventore, provident consectetur et est cum, enim.</p>
+       <p>Laudantium eos nobis, recusandae, nesciunt, officiis explicabo commodi sint nostrum distinctio, vero autem sapiente expedita corporis. Maiores facere, consectetur nobis quaerat fugiat ipsum saepe libero, impedit minus aspernatur nulla modi?</p>
+       <footer>
+         <p>
+           <a href="">enlaces</a>
+           <a href="">enlaces</a>
+           <a href="">enlaces</a>
+         </p>
+       </footer>
+     </article>
+     <article class="modulo">
+       <header>
+         <h2><a href="">Titulo articulo 5</a></h2>
+       </header>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus expedita maxime asperiores ea, eius veritatis qui ad possimus. Alias est quod odit, aut cum aliquam sapiente recusandae dolores molestiae, reiciendis!</p>
+       <p>Velit nam, eum sequi suscipit recusandae quisquam consectetur aut minus porro architecto possimus repudiandae modi provident minima nemo fugiat qui! Quis ea vel ducimus nulla quaerat sed, recusandae aspernatur officia!</p>
+       <p>Sint quos laboriosam dolores repellendus rerum voluptatibus at, accusamus quod porro atque ab iusto dolorem iure a ipsam autem saepe, deleniti mollitia sit, aperiam? Dolore soluta, quod temporibus natus commodi.</p>
+       <footer>
+         <p>
+           <a href="">enlaces</a>
+           <a href="">enlaces</a>
+           <a href="">enlaces</a>
+         </p>
+       </footer>
+     </article>
+     <article class="modulo">
+       <header>
+         <h2><a href="">Titulo articulo 6</a></h2>
+       </header>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur incidunt id, corporis. Non odio architecto ducimus hic, neque aspernatur unde ipsum! Quasi magnam cumque explicabo eaque iusto hic accusamus consequuntur!</p>
+       <p>Minima obcaecati illo, nulla cum eum quasi vitae accusantium eius quas impedit. Suscipit non iste harum, voluptatem, dolorem voluptates rerum labore, cumque ullam quo quos perferendis velit culpa dolores laudantium?</p>
+       <p>Natus dolor dignissimos eligendi laudantium sint earum non facere aut, placeat molestiae exercitationem iste obcaecati tempora commodi doloribus, unde, voluptas corrupti reiciendis ad voluptatum pariatur. Omnis nesciunt ad fugiat eum.</p>
+       <footer>
+         <p>
+           <a href="">enlaces</a>
+           <a href="">enlaces</a>
+           <a href="">enlaces</a>
+         </p>
+       </footer>
+     </article>
+    <footer>
       <p>Pie de la seccion</p>
     </footer>
-  </section>
-  
-  <section>
-    <header>
-      Selectores
-    </header>
-    <article>
-      <h1>Selector de siguiente elemento</h1>
-      <p>
-        <input type="text">
-      </p>
-      
-      <label for="algo">Seleccionar algo</label>
-      <input type="checkbox" name="algo" id="algo">
-      <aside class="modal">
-        <header>
-          <h1><a href="">Lorem ipsum dolor sit amet, consectetur.</a></h1>
-        </header>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quos libero deserunt accusamus eius saepe asperiores ipsum nostrum sapiente consequatur impedit a consectetur culpa omnis, tempore. A fugiat est, necessitatibus.</p>
-        <p>Ducimus quo illo natus rem quam nam delectus impedit, illum aliquam quis, reprehenderit error sit ipsa saepe, ipsam totam et, odit ut. Dolorem magni pariatur laborum repellat, minima non rem!</p>
-        <p>Id quidem quibusdam ad dignissimos debitis corporis dolore autem voluptatibus eveniet doloremque aliquam maxime adipisci dolores dolor tempore nemo excepturi incidunt, natus reiciendis maiores obcaecati! Quasi explicabo itaque dicta totam.</p>
-      </aside>
-    </article>
   </section>
   
   <aside role="navigation">
@@ -126,3 +150,8 @@
   </footer>
 </body>
 </html>
+
+
+
+
+

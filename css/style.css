@@ -1,0 +1,175 @@
+/*
+font-family: 'Dosis', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+body {
+  margin: 0;
+  padding: 3em 0 0 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Dosis', sans-serif;
+}
+a {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body > header,
+body > section, 
+body > footer {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+body > header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  height: 3em;
+  background-color: #3498db;
+  color: white;
+}
+
+body > header a {
+  color: white;
+}
+
+header .brand {
+  text-decoration: none;
+  font-size: 2em;
+  line-height: 1.5em;
+  display: inline-block;
+  margin-left: 1.5em;
+}
+
+header .toggle-next-element {
+  position: absolute;
+  left: 0.5em;
+  font-size: 2em;
+  line-height: 1.5em;
+  cursor: pointer;
+  padding-top: 0.1em;
+}
+header .toggle-next-element + input {
+  display: none;
+}
+
+.toggle-next-element + input:checked + .menu {
+  top: 3em;
+  opacity: 1;
+}
+
+.menu,
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu.menu-header {
+  position: fixed;
+  background-color: #2ecc71;
+  width: 100%;
+  left: 0;
+  top: -100%;
+  opacity: 0;
+  transition: opacity 500ms ease 250ms, 
+              top 500ms ease 0;
+}
+
+.menu.menu-header a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+}
+.menu.menu-header a:hover {
+  background-color: #27ae60;
+}
+
+.modulo {
+  margin: 3em 0;
+/*  box-shadow: x y blur spread color;*/
+  box-shadow: 0 5px 20px 0 #1abc9c;
+}
+.modulo header,
+.modulo p,
+.modulo footer {
+  padding: 0.5em;
+}
+
+.modulo header {
+  background-color: #34495e;
+
+}
+.modulo h2 {
+  margin: 0;
+}
+.modulo h2 a {
+  color: #f1c40f;
+  text-decoration: none;
+}
+.modulo p {
+  font-size: 0.9em;
+  font-weight: 100;
+  color: #2f2f2f;
+}
+
+section[role=main] > footer {
+  margin: 0;
+  padding: 1em;
+  margin-top: -3em;
+  background-color: #b5b5b5;
+  color: #fff;
+  text-shadow: -1px -1px 0 #696969; 
+}
+
+body > aside {
+  margin-top: 3em;
+  padding: 1em;
+  background-color: #c0392b;
+  color: white;
+}
+body > aside a {
+  color: white;
+}
+aside nav {
+  margin: 1em 0;
+}
+aside nav a {
+  display: block;
+  padding: 0.5em 0;
+}
+aside nav a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
